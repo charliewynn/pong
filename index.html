@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<!--above line makes game playable in IE 9-->
+<html>
+	<head>
+		<title>Pong Remake</title>
+
+		<script type="text/javascript" src="globals.js"></script>
+		<script type="text/javascript" src="drawing.js"></script>
+		<script type="text/javascript" src="gamemechanics.js"></script>
+		
+		<style type="text/css">
+		html, body {
+		  width:  100%;
+		  height: 100%;
+		  margin: 0px;
+		}
+		</style>
+	</head>
+	
+	<!-- didload is in gameMechanics.js and init's the variables for the game and the canvas -->
+	<body onLoad="didload()">
+		<div align="center" id="canvas" style="margin:50px;"></div>
+    <div align="center">
+    <button id="ai" onClick="toggleAi();">Turn Player 1 Computer Player Off</button>(Resets game)<br><br>
+      If you score your paddle shortens... First one to make their paddle disappear wins!<br><br>
+      Player 1 controls: q/a to move up/down OR '/a(for dvorak users) <br>
+      Player 2 controls: up/down arrows to move up/down<br>
+    </div>
+	</body>
+</html>
